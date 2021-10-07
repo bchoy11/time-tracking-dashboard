@@ -13,7 +13,7 @@ body{
 button{
     background:none;
     border:none;
-    margin:0;
+    margin: 0.25rem;;
     padding: 0.25rem;
     cursor: pointer;
     color:hsl(235, 45%, 61%);
@@ -25,7 +25,7 @@ h1{
     font-size:18px;
     font-weight:400;
 }
-/*Grid layout*/
+/*Grid layout (overall positioning)*/
 .grid-container{
     display:grid;
     grid-template-columns: 1fr 3fr;
@@ -43,13 +43,76 @@ h1{
 .id-card{
     color:hsl(236, 100%, 87%);
     text-align:center;
+    display:flex;
+    flex-direction:column;
+    margin:9rem 5rem 9rem 5rem;
+
 }
 
-.category-card, .title-card{
-    border-style:solid;
-    border-color:#fff;
+.category-card{
+    position:relative;
+    display:grid;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: 2fr 1fr;
+    border-radius:10px;
+}
+
+.card-banner{
+    position:absolute;
+    grid-column:2;
+    grid-row:1/ 4;
+    z-index:1;
+}
+
+.category-card-info{
+    z-index:2;
+    grid-row:7 / -1;
+    grid-column: 1/ -1;
+}
+
+.category-card-info, .title-card{
+    background-color:hsl(235, 46%, 20%);
+    border:1px solid hsl(235, 46%, 20%);
     border-radius:10px;
     padding-left: 1rem;
+}
+
+.title-card{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ellipsis{
+    float:right;
+    margin:0.5rem 1rem 0 0;
+}
+
+/* Card banner styling */
+
+#work{
+    background-color: hsl(15, 100%, 70%);
+}
+
+#play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+#study{
+    background-color: hsl(348, 100%, 68%);
+}
+
+#exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+
+#social{
+    background-color: hsl(264, 64%, 52%);
+}
+
+#self-care{
+    background-color: hsl(43, 84%, 65%);
 }
 
 /*Info styles*/
