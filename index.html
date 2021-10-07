@@ -17,51 +17,61 @@
   </style>
 </head>
 <body>
-<div>
+<div class="grid-container">
   <div class="title-card">
-  Report for
-  Jeremy Robson
+    <div class="id-card">
+      Report for
+      <div class="name" style="color:#fff">
+        Jeremy Robson
+      </div>
+    </div>
 
-  <button onclick="displayTime('day')">Daily</button>
-  <button onclick="displayTime('week')">Weekly</button>
-  <button onclick="displayTime('month')">Monthly</button>
+    <button onclick="displayTime('day')" id="day-button" class="time-button">
+      Daily
+    </button>
+    <button onclick="displayTime('week')" id="week-button" class="time-button">
+      Weekly
+    </button>
+    <button onclick="displayTime('month')" id="month-button" class="time-button">
+      Monthly
+    </button>
   </div>
+  <div class="category-container">
+    <div class="category-card">
+      <h1>
+        Work
+      </h1>
+      <div class="time-report-day">
+        <p class="current-time">
+          5hrs <!-- daily -->
+        </p>
+        <p class="previous-time">
+          Previous - 7hrs <!-- daily -->
+        </p>
+      </div>
+      <div class="time-report-week">
+        <p class="current-time">
+          32hrs <!-- weekly -->
+        </p>
+        <p class="previous-time">
+          Previous - 36hrs <!-- weekly -->
+        </p>
+      </div>
+      <div class="time-report-month">
+        <p class="current-time">
+          103hrs <!-- monthly -->
+        </p>
+        <p class="previous-time">
+          Previous - 128hrs <!-- monthly -->
+        </p>
+      </div>
+    </div>
 
-  <div class="category-card">
-  <h1>
-    Work
-  </h1>
-    <div class="time-report-day">
-      <p class="current-time">
-        5hrs <!-- daily -->
-      </p>
-      <p class="previous-time">
-        Previous - 7hrs <!-- daily -->
-      </p>
-    </div>
-    <div class="time-report-week">
-      <p class="current-time">
-        32hrs <!-- weekly -->
-      </p>
-      <p class="previous-time">
-        Previous - 36hrs <!-- weekly -->
-      </p>
-    </div>
-    <div class="time-report-month">
-      <p class="current-time">
-        103hrs <!-- monthly -->
-      </p>
-      <p class="previous-time">
-        Previous - 128hrs <!-- monthly -->
-      </p>
-    </div>
-  </div>
-
-  
-  <div class="category-card">
-    <h1>
-      Play
-    </h1>
+    
+    <div class="category-card">
+      <h1>
+        Play
+      </h1>
       <div class="time-report-day">
         <p class="current-time">
           1hr <!-- daily -->
@@ -86,12 +96,12 @@
           Previous - 29hrs <!-- monthly -->
         </p>
       </div>
-  </div>
+    </div>
 
-  <div class="category-card">
-    <h1>
-      Study
-    </h1>
+    <div class="category-card">
+      <h1>
+        Study
+      </h1>
       <div class="time-report-day">
         <p class="current-time">
           0hrs <!-- daily -->
@@ -116,12 +126,12 @@
           Previous - 19hrs <!-- monthly -->
         </p>
       </div>
-  </div>
+    </div>
 
-  <div class="category-card">
-    <h1>
-      Exercise
-    </h1>
+    <div class="category-card">
+      <h1>
+        Exercise
+      </h1>
       <div class="time-report-day">
         <p class="current-time">
           1hr <!-- daily -->
@@ -146,12 +156,12 @@
           Previous - 18hrs <!-- monthly -->
         </p>
       </div>
-  </div>
+    </div>
 
-  <div class="category-card">
-    <h1>
-      Social
-    </h1>
+    <div class="category-card">
+      <h1>
+        Social
+      </h1>
       <div class="time-report-day">
         <p class="current-time">
           1hr <!-- daily -->
@@ -176,12 +186,12 @@
           Previous - 23hrs <!-- monthly -->
         </p>
       </div>
-  </div>
+    </div>
 
-  <div class="category-card">
-    <h1>
-      Self Care
-    </h1>
+    <div class="category-card">
+      <h1>
+        Self Care
+      </h1>
       <div class="time-report-day">
         <p class="current-time">
           0hrs <!-- daily -->
@@ -206,6 +216,7 @@
           Previous - 11hrs <!-- monthly -->
         </p>
       </div>
+    </div>
   </div>
 </div>
   
