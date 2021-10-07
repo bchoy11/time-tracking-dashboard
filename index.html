@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div>
+  <div class="title-card">
+  Report for
+  Jeremy Robson
+
+  <button onclick="displayTime('day')">Daily</button>
+  <button onclick="displayTime('week')">Weekly</button>
+  <button onclick="displayTime('month')">Monthly</button>
+  </div>
+
+  <div class="category-card">
+  <h1>
+    Work
+  </h1>
+    <div class="time-report-day">
+      <p class="current-time">
+        5hrs <!-- daily -->
+      </p>
+      <p class="previous-time">
+        Previous - 7hrs <!-- daily -->
+      </p>
+    </div>
+    <div class="time-report-week">
+      <p class="current-time">
+        32hrs <!-- weekly -->
+      </p>
+      <p class="previous-time">
+        Previous - 36hrs <!-- weekly -->
+      </p>
+    </div>
+    <div class="time-report-month">
+      <p class="current-time">
+        103hrs <!-- monthly -->
+      </p>
+      <p class="previous-time">
+        Previous - 128hrs <!-- monthly -->
+      </p>
+    </div>
+  </div>
+
+  
+  <div class="category-card">
+    <h1>
+      Play
+    </h1>
+      <div class="time-report-day">
+        <p class="current-time">
+          1hr <!-- daily -->
+        </p>
+        <p class="previous-time">
+          Previous - 2hrs <!-- daily -->
+        </p>
+      </div>
+      <div class="time-report-week">
+        <p class="current-time">
+          10hrs <!-- weekly -->
+        </p>
+        <p class="previous-time">
+          Previous - 8hrs <!-- weekly -->
+        </p>
+      </div>
+      <div class="time-report-month">
+        <p class="current-time">
+          23hrs <!-- monthly -->
+        </p>
+        <p class="previous-time">
+          Previous - 29hrs <!-- monthly -->
+        </p>
+      </div>
+  </div>
+
+  <div class="category-card">
+    <h1>
+      Study
+    </h1>
+      <div class="time-report-day">
+        <p class="current-time">
+          0hrs <!-- daily -->
+        </p>
+        <p class="previous-time">
+          Previous - 1hr <!-- daily -->
+        </p>
+      </div>
+      <div class="time-report-week">
+        <p class="current-time">
+          4hrs <!-- weekly -->
+        </p>
+        <p class="previous-time">
+          Previous - 7hrs <!-- weekly -->
+        </p>
+      </div>
+      <div class="time-report-month">
+        <p class="current-time">
+          13hrs <!-- monthly -->
+        </p>
+        <p class="previous-time">
+          Previous - 19hrs <!-- monthly -->
+        </p>
+      </div>
+  </div>
+
+  <div class="category-card">
+    <h1>
+      Exercise
+    </h1>
+      <div class="time-report-day">
+        <p class="current-time">
+          1hr <!-- daily -->
+        </p>
+        <p class="previous-time">
+          Previous - 1hr <!-- daily -->
+        </p>
+      </div>
+      <div class="time-report-week">
+        <p class="current-time">
+          4hrs <!-- weekly -->
+        </p>
+        <p class="previous-time">
+          Previous - 5hrs <!-- weekly -->
+        </p>
+      </div>
+      <div class="time-report-month">
+        <p class="current-time">
+          11hrs <!-- monthly -->
+        </p>
+        <p class="previous-time">
+          Previous - 18hrs <!-- monthly -->
+        </p>
+      </div>
+  </div>
+
+  <div class="category-card">
+    <h1>
+      Social
+    </h1>
+      <div class="time-report-day">
+        <p class="current-time">
+          1hr <!-- daily -->
+        </p>
+        <p class="previous-time">
+          Previous - 3hrs <!-- daily -->
+        </p>
+      </div>
+      <div class="time-report-week">
+        <p class="current-time">
+          5hrs <!-- weekly -->
+        </p>
+        <p class="previous-time">
+          Previous - 10hrs <!-- weekly -->
+        </p>
+      </div>
+      <div class="time-report-month">
+        <p class="current-time">
+          21hrs <!-- monthly -->
+        </p>
+        <p class="previous-time">
+          Previous - 23hrs <!-- monthly -->
+        </p>
+      </div>
+  </div>
+
+  <div class="category-card">
+    <h1>
+      Self Care
+    </h1>
+      <div class="time-report-day">
+        <p class="current-time">
+          0hrs <!-- daily -->
+        </p>
+        <p class="previous-time">
+          Previous - 1hr <!-- daily -->
+        </p>
+      </div>
+      <div class="time-report-week">
+        <p class="current-time">
+          2hrs <!-- weekly -->
+        </p>
+        <p class="previous-time">
+          Previous - 2hrs <!-- weekly -->
+        </p>
+      </div>
+      <div class="time-report-month">
+        <p class="current-time">
+          7hrs <!-- monthly -->
+        </p>
+        <p class="previous-time">
+          Previous - 11hrs <!-- monthly -->
+        </p>
+      </div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
