@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+*{
+    font-family: 'Rubik';
+}
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    color:#fff;
+    margin-left:20%;
+    margin-right:20%;  
+}
+
+button{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    color:hsl(235, 45%, 61%);
+}
+
+h1{
+    font-size:18px;
+    font-weight:400;
+}
+
+.current-time{
+    font-size:30px;
+    font-weight:400;
+}
+
+.previous-time{
+    color:hsl(236, 100%, 87%);
+    font-weight:300;
+}
+
+.time-report-day{
+    display:block;
+}
+
+.time-report-week{
+    display:none;
+}
+
+.time-report-month{
+    display:none;
+}
+
