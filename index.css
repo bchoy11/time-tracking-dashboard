@@ -17,8 +17,6 @@ button{
     padding: 0.35rem;
     cursor: pointer;
     color:hsl(235, 45%, 61%);
-    display:flex;
-    flex-direction:column;
 }
 
 h1{
@@ -27,17 +25,17 @@ h1{
 }
 /*Grid layout (overall positioning)*/
 .grid-container{
-    display:grid;
-    grid-template-columns: 1fr 3fr;
-    gap:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
 }
 
 .category-container{
-    display:grid;
-    grid-template-columns:auto auto auto;
-    grid-template-rows: auto auto;
-    gap:1rem 1rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
 
 /*Card styles*/
 img:not(.ellipsis){
@@ -46,10 +44,11 @@ img:not(.ellipsis){
     
 }
 
+
+
 .id-card{
     color:hsl(236, 100%, 87%);
     text-align:center;
-    border:solid green;
     border-radius:10px;
     background-color:hsl(246, 80%, 60%);
     width:100%;
@@ -144,9 +143,33 @@ img:not(.ellipsis){
     display:none;
 }
 
-.id-content{
-    display:flex;
-    flex-direction:column;
-    align-items: flex-start;
-    margin-left:1rem;
+/* media queries */
+@media (min-width: 750px){
+    .id-content{
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        margin-left:1rem;
+    }
+    .grid-container{
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        gap:1rem;
+    }
+
+    .category-container{
+        display:grid;
+        grid-template-columns:auto auto auto;
+        grid-template-rows: auto auto;
+        gap:1rem 1rem;
+    }
+    .button{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+@media (max-width:750px){
+    .title-card{
+        height:150px;
 }
