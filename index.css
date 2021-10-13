@@ -19,6 +19,12 @@ button{
     color:hsl(235, 45%, 61%);
 }
 
+.btn-group{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 h1{
     font-size:18px;
     font-weight:400;
@@ -83,9 +89,8 @@ img:not(.ellipsis){
 
 .category-card-info, .title-card{
     background-color:hsl(235, 46%, 20%);
-    border:1px solid hsl(235, 46%, 20%);
+    border: solid hsl(235, 46%, 20%);
     border-radius:10px;
-    
 }
 
 .ellipsis{
@@ -172,4 +177,14 @@ img:not(.ellipsis){
 @media (max-width:750px){
     .title-card{
         height:150px;
+    }
+    .btn-group{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .category-card-info{
+        /* display:grid; */
+        /* grid-template-rows: 1fr 1fr; */
+    }
 }
